@@ -59,7 +59,6 @@ public class DatabaseDriver {
         for (i = 0; i < cList.length; i++) {
             command = cList[i];
             if (command.length() > 2) {
-//        System.out.println("command:" + command);
                 try {
                     stmt = conn.createStatement();
                     rs = stmt.executeQuery(command);
